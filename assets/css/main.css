@@ -1,0 +1,162 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .profile {
+        display: block !important;
+        position: relative !important;
+        z-index: 1 !important;
+    }
+    
+    .card-started .profile .title {
+        margin: 10px 0 !important;
+    }
+    
+    .f-menu {
+        width: 100%;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    }
+    
+    .box-item {
+        position: relative;
+        display: block;
+    }
+    
+    .box-item .image {
+        height: 100%;
+    }
+    
+    .box-item .image a {
+        display: block;
+        font-size: 0;
+        margin: 5px 0 !important;
+        position: relative;
+        height: 140px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #ff9800;
+        border-radius: 5px;
+        border: 5px solid #ff9800;
+        box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+        transition: ease all .5s;
+        -webkit-transition: ease all .5s;
+        -moz-transition: ease all .5s;
+        -ms-transition: ease all .5s;
+        -o-transition: ease all .5s;
+    }
+    
+    .box-item .image a img {
+        position: absolute;
+        transform: translate(-50%, -50%) !important;
+        width: auto !important;
+        min-width: 100%;
+        opacity: 1;
+        left: 50%;
+        top: 50%;
+        height: 200px !important;
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        -o-transform: translate(-50%, -50%) !important;
+        transition: ease all .5s;
+        -webkit-transition: ease all .5s;
+        -moz-transition: ease all .5s;
+        -ms-transition: ease all .5s;
+        -o-transition: ease all .5s;
+    }
+    
+    .box-item .image a:hover {
+        margin: 0 0 10px !important;
+    }
+    
+    .box-item .image a:hover img {
+        height: 220px !important;
+        min-width: 120% !important;
+        opacity: .7;
+    }
+    
+    .box-item .image .desc {
+        padding: 10px 0;
+        color: white
+    }
+    /*hack desktop view*/
+    
+    .main-content {
+        background: #31313a;
+        padding: 0 30px;
+        position: absolute;
+        left: 560px;
+        right: 0;
+        top: 15px;
+        bottom: 15px;
+        width: auto;
+        height: auto;
+        border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        -webkit-border-radius: 0 4px 4px 0;
+        -khtml-border-radius: 0 4px 4px 0;
+        overflow: auto;
+        overflow-x: hidden;
+        scroll-behavior: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .main-content .card-innerx {
+        padding: 25px 0;
+    }
+    /*end hack desktop view*/
+    /*animasi text*/
+    
+    .typing-title .owl-carousel .owl-stage-outer {
+        width: 100%;
+    }
+    
+    .typing-title {
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .typing-title2 {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .typing-title p,
+    .typing-title2 p {
+        display: block !important;
+        margin: 0;
+    }
+    /*end animasi text*/
+    
+    @media (max-width: 566px) {
+        .container.opened {
+            padding-top: 132px !important;
+        }
+        .main-content .card-innerx {
+            padding: 150px 0 25px;
+        }
+    }
+    
+    @media (min-width: 567px) and (max-width: 680px) {
+        .container.opened {
+            padding-top: 0 !important;
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .main-content {
+            background: #31313a;
+            padding: 0 30px;
+            position: relative;
+            left: unset;
+            right: unset;
+            top: unset;
+            bottom: unset;
+            width: auto;
+            height: auto;
+        }
+    }
